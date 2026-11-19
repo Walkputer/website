@@ -1,0 +1,15 @@
+# Walkputer
+
+> Walkputer is a pocket computer fantasy console: like other fantasy consoles, a small computer with simple, fixed limits rather than a rival to a desktop computer, and more than a console for playing games. It runs on microcontrollers like the Raspberry Pi Pico. It's built in a Game Boy-like form factor — a D-pad and buttons under a 320×240 screen — and it includes its own code editor and compiler, so programs are written and built on the device itself. It isn't released yet: coming soon.
+
+Walkputer is designed by B. Stjepanović at MKK Palilula, a company that develops software and electronic devices. The code editor shows a program as a tree of code, edited by picking from menus with the D-pad and buttons rather than typing on a keyboard.
+
+## Links
+
+- [Walkputer](https://walkputer.com/): this site, the description and screens from the device
+- [News](https://walkputer.com/news/): updates on the project — where it stands and what's next
+- [MKK Palilula](https://mkk-palilula.com/): the company that makes Walkputer
+- [Walkputer on GitHub](https://github.com/Walkputer)
+- [MKK Palilula on GitHub](https://github.com/MKK-Palilula)
+- [Walkputer on X](https://x.com/walkputer): @walkputer, updates
+- [Walkputer on Instagram](https://www.instagram.com/walkputer/): @walkputer, updates

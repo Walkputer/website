@@ -1,0 +1,14 @@
+<!-- Square MKK Palilula avatar for the GitHub organization profile.
+     "Integrated circuit silkscreen" scheme: dark epoxy-grey body with light-grey
+     monospace markings (no brand purple — that belongs to Walkputer).
+     "MKK" (Mikro Kompjuterski Kombinat) and "PALILULA" carry equal weight, so
+     both lines share font size, weight, and width — the M K K letters are spaced
+     out (lengthAdjust="spacing", glyphs undistorted) to match PALILULA.
+     512x512, content kept inside GitHub's circular/rounded crop. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="MKK Palilula">
+  <rect width="512" height="512" fill="#2b2c30"/>
+  <g font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" fill="#cdd1d6" text-anchor="middle" font-weight="700">
+    <text x="256" y="219" font-size="78" textLength="380" lengthAdjust="spacing">MKK</text>
+    <text x="256" y="349" font-size="78" textLength="380" lengthAdjust="spacing">PALILULA</text>
+  </g>
+</svg>

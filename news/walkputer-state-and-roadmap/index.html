@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- The W from the wordmark: SVG for browsers that take it, the ICO and a
+         48px-multiple PNG for search results, and the Apple touch icon. -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The title, description, canonical URL and link-preview (Open Graph / X)
+         tags are written per page by StaticPress, from `app.site` in
+         StaticPress.config.tsx and each page's meta. -->
+    <title>Walkputer: where it stands and what's next — Walkputer</title>
+    <meta data-sp-head name="description" content="Walkputer now builds its own software on the device. Here's the state of the software and the hardware, and the roadmap to the first release and beyond." />
+    <meta data-sp-head name="robots" content="index, follow, max-image-preview:large" />
+    <link data-sp-head rel="canonical" href="https://walkputer.com/news/walkputer-state-and-roadmap/" />
+    <meta data-sp-head property="og:type" content="article" />
+    <meta data-sp-head property="og:site_name" content="Walkputer" />
+    <meta data-sp-head property="og:locale" content="en_US" />
+    <meta data-sp-head property="og:title" content="Walkputer: where it stands and what's next" />
+    <meta data-sp-head property="og:description" content="Walkputer now builds its own software on the device. Here's the state of the software and the hardware, and the roadmap to the first release and beyond." />
+    <meta data-sp-head property="og:url" content="https://walkputer.com/news/walkputer-state-and-roadmap/" />
+    <meta data-sp-head property="og:image" content="https://walkputer.com/images/splash.png" />
+    <meta data-sp-head property="og:image:alt" content="Walkputer's boot screen" />
+    <meta data-sp-head property="og:image:width" content="640" />
+    <meta data-sp-head property="og:image:height" content="480" />
+    <meta data-sp-head property="article:published_time" content="2026-11-16" />
+    <meta data-sp-head name="twitter:card" content="summary_large_image" />
+    <meta data-sp-head name="twitter:site" content="@walkputer" />
+    <script data-sp-head type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Walkputer: where it stands and what's next","description":"Walkputer now builds its own software on the device. Here's the state of the software and the hardware, and the roadmap to the first release and beyond.","datePublished":"2026-11-16","url":"https://walkputer.com/news/walkputer-state-and-roadmap/","mainEntityOfPage":"https://walkputer.com/news/walkputer-state-and-roadmap/","publisher":{"@type":"Organization","name":"MKK Palilula"}}</script>
+    <meta name="author" content="B. Stjepanović / MKK Palilula" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable summary" />
+    <!-- Structured data for search engines and AI crawlers: the site, the
+         device, who makes it. The plain-text version is /llms.txt. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://walkputer.com/#website",
+            "url": "https://walkputer.com/",
+            "name": "Walkputer",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://mkk-palilula.com/#organization" },
+            "about": { "@id": "https://walkputer.com/#product" }
+          },
+          {
+            "@type": "Product",
+            "@id": "https://walkputer.com/#product",
+            "name": "Walkputer",
+            "category": "Fantasy console",
+            "description": "A pocket computer fantasy console — a small computer with simple, fixed limits, not just for games — that runs on microcontrollers like the Raspberry Pi Pico, in a Game Boy-like form factor with a D-pad and buttons under a 320×240 screen. It includes its own code editor and compiler, so programs are written and built on the device itself. Designed by B. Stjepanović / MKK Palilula. Coming soon.",
+            "image": [
+              "https://walkputer.com/images/splash.png",
+              "https://walkputer.com/images/editor.png"
+            ],
+            "url": "https://walkputer.com/",
+            "brand": { "@type": "Brand", "name": "Walkputer" },
+            "manufacturer": { "@id": "https://mkk-palilula.com/#organization" },
+            "sameAs": [
+              "https://x.com/walkputer",
+              "https://www.instagram.com/walkputer/",
+              "https://github.com/Walkputer"
+            ]
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://mkk-palilula.com/#organization",
+            "name": "MKK Palilula",
+            "url": "https://mkk-palilula.com/",
+            "logo": "https://mkk-palilula.com/logos/mkk-palilula-avatar.png",
+            "sameAs": ["https://github.com/MKK-Palilula"]
+          }
+        ]
+      }
+    </script>
+    <!-- Linked here (not imported from JS) so the prerendered HTML is styled
+         without JavaScript, in both dev and the static build. -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3KQYV33F5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Z3KQYV33F5');
+    </script>
+    <script type="module" crossorigin src="/assets/index-7-iEKIUP.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C4h-mC7v.css">
+  </head>
+  <body>
+    <div id="app"><div class="flex min-h-screen flex-col bg-white text-gray-900"><header class="sticky top-0 z-40 border-b border-gray-200 bg-white shadow-sm"><div class="mx-auto w-full max-w-5xl px-6 flex h-16 items-center justify-between gap-4"><a href="/" class="inline-flex items-center no-underline"><span class="inline-flex items-baseline gap-2 leading-none"><span class="inline-block -skew-x-12 text-3xl font-bold tracking-[-0.07em] text-brand-600">WALKPUTER</span></span></a><div class="flex items-center gap-6"><nav aria-label="Main"><ul class="flex items-center gap-5 text-sm font-semibold"><li><a href="/" class="transition-colors text-gray-500 hover:text-gray-900">Home</a></li><li><a href="/news/" aria-current="page" class="transition-colors text-gray-900">News</a></li></ul></nav><span class="hidden shrink-0 items-center gap-2 rounded-full border border-gray-200 py-1.5 pl-3 pr-[calc(0.75rem-0.2em)] text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-gray-500 sm:inline-flex"><span class="h-1.5 w-1.5 rounded-full bg-brand-600 motion-safe:animate-pulse"></span>Coming soon</span></div></div></header><main class="mx-auto w-full max-w-5xl px-6 flex-1 py-16"><div class="mx-auto flex max-w-4xl flex-col gap-10 lg:flex-row lg:items-start"><article class="min-w-0 flex-1"><time datetime="2026-11-16" class="text-xs font-semibold uppercase tracking-[0.15em] text-gray-500">November 16, 2026</time><h1 class="mt-2 text-3xl font-semibold text-gray-800">Walkputer: where it stands and what's next</h1><p class="mt-3 max-w-2xl text-lg leading-relaxed text-gray-600">Walkputer now builds its own software on the device. Here's the state of the software and the hardware, and the roadmap to the first release and beyond.</p><div class="prose prose-slate prose-a:text-primary-600 prose-a:no-underline prose-a:hover:underline mt-8"><p>Walkputer is a pocket computer fantasy console that runs on microcontrollers
+like the Raspberry Pi Pico. Programs are written and compiled on the device itself,
+with a D-pad and buttons instead of a keyboard.</p>
+<h2>Software</h2>
+<p><strong>Its own compiler.</strong> Walkputer&#39;s programs were first written in C and
+compiled with GCC on a computer. Now the device has its own compiler, so
+programs are written and built on the Walkputer itself. That compiler already
+builds the code editor, every app in the system, and its own source:
+everything on a Walkputer can now be rebuilt on a Walkputer.</p>
+<p><strong>The editor.</strong> The code editor shows a program as a tree of code rather than
+lines of text, and you change it by picking from menus that know what fits
+where.</p>
+<p><strong>The system.</strong> Wapucore, the core of the system, runs programs and handles
+graphics, sound and files. Its file system on the SD card is copy-on-write, so
+a crash or a pulled battery can&#39;t leave a file half-written.</p>
+<p><strong>The emulator.</strong> Walkputer also runs on a computer, in a desktop emulator and
+in a web one, so programs can be tried without a device. The web one will be
+the first part of Walkputer anyone can try (see the roadmap below).</p>
+<h2>Hardware</h2>
+<figure class="sp-figure sp-figure--right"><img src="/assets/raspberry-pi-D3XA-hZx.svg" alt="Raspberry Pi"></figure>
+<p>Walkputer runs on the <a href="https://www.raspberrypi.com/products/rp2350/">RP2350</a>, the chip in the Raspberry Pi Pico 2: two Arm
+cores at 150 MHz and 520 KB of RAM. For now it runs only on Arm; RISC-V is
+planned. It comes in two builds, and the same firmware runs on both — the
+settings for each board are loaded when it starts.</p>
+<h3>Walkputer shield</h3>
+<div class="sp-gallery" style="--sp-cols:2"><img src="/assets/product-front-sPgpi4Pk.png" alt="Product"><img src="/assets/product-hero-CoFiNP0E.png" alt="Product"></div>
+<p><strong>The DIY shield.</strong> A shield for Waveshare&#39;s RP2350 modules (<a href="https://www.waveshare.com/product/rp2350-touch-lcd-2.8.htm">2.8&quot; LCD</a> or <a href="https://www.waveshare.com/rp2350-touch-amoled-2.41.htm">2.41&quot; AMOLED</a>), which already has
+the screen and the SD card slot. The shield adds the D-pad and buttons, and a
+few things the module lacks. It&#39;s a single PCB: you have it made from the
+design files at a PCB fab, then connect it to the module. It comes first.</p>
+<h3>Walkputer single board</h3>
+<p><strong>The Walkputer single board.</strong> A fully integrated board: everything on one board, in
+Walkputer&#39;s own form factor. It&#39;s in progress. </p>
+<h2>Roadmap</h2>
+<ol>
+<li><strong>Emulator public preview.</strong> The web emulator goes public, so anyone can
+try Walkputer in the browser before there&#39;s hardware to build.</li>
+<li><strong>DIY shield release.</strong> The firmware to flash to the module, the shield&#39;s
+design, and the guides that go with them: setting up the device, building
+the software, and assembling the shield.</li>
+<li><strong>Walkputer board release.</strong> The fully integrated board.</li>
+</ol>
+<p><strong>Walkputer will be open source</strong>, the software and the hardware alike. Both
+builds are being designed so that you can take the design files to a PCB
+manufacturing service and have the boards made yourself. An official prebuilt
+Walkputer might follow in the future.</p>
+<p>Updates will be posted here, and on <a href="https://x.com/walkputer">X</a> and
+<a href="https://www.instagram.com/walkputer/">Instagram</a>.</p>
+</div><p class="mt-12"><a href="/news/" class="text-primary-600 hover:underline text-sm font-medium">← All news</a></p></article><aside class="space-y-8 lg:w-60 lg:shrink-0"><div><p class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500">Follow</p><ul class="mt-3 grid grid-cols-2 gap-1 lg:grid-cols-1"><li><a href="https://x.com/walkputer" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 rounded-md px-2 py-1 text-gray-700 transition-colors hover:bg-gray-100 hover:text-primary-700"><span class="flex h-6 w-6 shrink-0 items-center justify-center"><svg viewBox="0 0 512 512" width="18" height="18" fill="currentColor" aria-hidden="true" class="inline-block shrink-0"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg></span>@walkputer</a></li><li><a href="https://www.instagram.com/walkputer/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 rounded-md px-2 py-1 text-gray-700 transition-colors hover:bg-gray-100 hover:text-primary-700"><span class="flex h-6 w-6 shrink-0 items-center justify-center"><svg viewBox="0 0 448 512" width="18" height="18" fill="currentColor" aria-hidden="true" class="inline-block shrink-0"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></span>@walkputer</a></li><li><a href="https://github.com/Walkputer" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 rounded-md px-2 py-1 text-gray-700 transition-colors hover:bg-gray-100 hover:text-primary-700"><span class="flex h-6 w-6 shrink-0 items-center justify-center"><svg viewBox="0 0 496 512" width="18" height="18" fill="currentColor" aria-hidden="true" class="inline-block shrink-0"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></span>Walkputer</a></li><li><a href="https://github.com/MKK-Palilula" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 rounded-md px-2 py-1 text-gray-700 transition-colors hover:bg-gray-100 hover:text-primary-700"><span class="flex h-6 w-6 shrink-0 items-center justify-center"><svg viewBox="0 0 496 512" width="18" height="18" fill="currentColor" aria-hidden="true" class="inline-block shrink-0"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></span>MKK-Palilula</a></li></ul></div></aside></div></main><footer class="border-t border-gray-200 bg-white text-sm text-gray-500"><div class="mx-auto w-full max-w-5xl px-6 flex flex-col items-center gap-6 py-8 sm:flex-row sm:justify-between"><a href="https://mkk-palilula.com" class="group flex items-center gap-4 no-underline"><img src="/logos/mkk-palilula-avatar.svg" alt width="56" height="56" class="h-14 w-14 rounded-lg"/><span class="flex flex-col gap-1 text-left leading-tight"><span class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400">Designed by</span><span class="font-medium text-gray-700 group-hover:text-gray-900">B. Stjepanović / MKK Palilula</span></span></a><ul class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2"><li><a href="https://x.com/walkputer" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-gray-600 transition-colors hover:text-gray-900"><svg viewBox="0 0 512 512" width="18" height="18" fill="currentColor" role="img" aria-label="X" class="inline-block shrink-0"><title>X</title><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>@walkputer</a></li><li><a href="https://www.instagram.com/walkputer/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-gray-600 transition-colors hover:text-gray-900"><svg viewBox="0 0 448 512" width="18" height="18" fill="currentColor" role="img" aria-label="Instagram" class="inline-block shrink-0"><title>Instagram</title><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>@walkputer</a></li><li><a href="https://github.com/Walkputer" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-gray-600 transition-colors hover:text-gray-900"><svg viewBox="0 0 496 512" width="18" height="18" fill="currentColor" role="img" aria-label="GitHub" class="inline-block shrink-0"><title>GitHub</title><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>Walkputer</a></li><li><a href="https://github.com/MKK-Palilula" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-gray-600 transition-colors hover:text-gray-900"><svg viewBox="0 0 496 512" width="18" height="18" fill="currentColor" role="img" aria-label="GitHub" class="inline-block shrink-0"><title>GitHub</title><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>MKK-Palilula</a></li></ul></div><div class="border-t border-gray-100"><div class="mx-auto w-full max-w-5xl px-6 py-4 text-center text-xs text-gray-400 sm:text-left">© 2026 MKK Palilula. All rights reserved.</div></div></footer></div><script type="isodata"></script></div>
+    <!-- StaticPress injects the client entry (it imports ./src/site.config). -->
+  </body>
+</html>
